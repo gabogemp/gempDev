@@ -1,0 +1,44 @@
+:root {
+    --font-h1: "Libre Franklin", sans-serif;
+    --font-h3: "Trirong", serif;
+    --font-p: "Telex", sans-serif;
+    --color-font-h1: white;
+    --color-font-h3: white;
+    --color-font-p: white;
+    --bg-color: rgb(21, 21, 29);
+}
+
+
+
+h1 {
+    font-family: var(--font-h1);
+    color: var(--color-font-h1);
+}
+
+h3 {
+    font-family: var(--font-h3);
+    color: var(--color-font-h3);
+}
+
+p {
+    font-family: var(--font-p);
+    color: var(--color-font-p);
+}
+
+/* reseteando css */
+body {
+    margin: 0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bg-color);
+}
