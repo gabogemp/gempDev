@@ -1,10 +1,11 @@
 :root {
     --font-h1: "Libre Franklin", sans-serif;
     --font-h3: "Trirong", serif;
-    --font-p: "Telex", sans-serif;
+    --font-base: "Telex", sans-serif;
     --color-font-h1: white;
     --color-font-h3: white;
     --color-font-p: white;
+    --color-links: white;
     --bg-color: rgb(21, 21, 29);
 }
 
@@ -12,7 +13,7 @@
 
 h1 {
     font-family: var(--font-h1);
-    color: var(--color-font-h1);
+    color: var(--color-font-h1);    
 }
 
 h3 {
@@ -21,7 +22,7 @@ h3 {
 }
 
 p {
-    font-family: var(--font-p);
+    font-family: var(--font-base);
     color: var(--color-font-p);
 }
 
@@ -32,7 +33,22 @@ body {
 }
 
 a {
-    text-decoration: none;
+    /* text-decoration: none;
+    color: var(--color-links);
+    font-family: var(--font-base);
+     */
+     color: var(--color-font-p); /* Color inicial del enlace */
+     text-decoration: none;
+     transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+}
+
+a:hover {
+    
+    /* color: var(--color-font-p);
+    transition: color 2.7s ease-in-out, text-shadow 2.7s ease-in-out;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5); */
+    color: var(--color-font-p);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 * {
